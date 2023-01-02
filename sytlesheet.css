@@ -1,5 +1,37 @@
 section {
     height: 500px;
     background-color: darkolivegreen;
-    border: solid black 1px;
+}
+.hero{
+    background-color: darkgreen;
+    height: 100vh; /*viewport-percentage(vh): percentage of area the window in which web content can be seen, so 100 percent of screen (desktop/mobile)*/
+    color: white;
+    font-size: 40px;
+}
+footer{
+    height: 500px;
+}
+nav{
+    display: flex; /*flex to appear inline*/
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    width: 500px;
+    justify-content: space-around; /*haves the same space around items in the unordered list*/
+    font-size: 30px;
+}
+li{
+    text-decoration: none; /*removes underline under a link*/
+    list-style-type: none; /*removes bullet points off of list items*/
+}
+h1{
+    font-size: 90px;
+}
+html, body{ /*removing the default padding google chrome applies*/
+    margin: 0;
+    padding: 0;
+}
+.hero-text{ /*text of hero page*/
+    margin-left: 40px;
 }
