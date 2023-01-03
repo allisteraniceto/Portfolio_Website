@@ -1,3 +1,8 @@
+html, body{ /*removing the default padding google chrome applies*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /*CSS rules to specify families - copied from fonts.google.com*/
+}
 section {
     height: 500px;
     background-color: darkolivegreen;
@@ -7,6 +12,9 @@ section {
     height: 100vh; /*viewport-percentage(vh): percentage of area the window in which web content can be seen, so 100 percent of screen (desktop/mobile)*/
     color: white;
     font-size: 40px;
+}
+.hero-text{ /*text of hero page*/
+    margin-left: 80px;
 }
 footer{
     height: 500px;
@@ -27,11 +35,22 @@ li{
 }
 h1{
     font-size: 90px;
-}
-html, body{ /*removing the default padding google chrome applies*/
     margin: 0;
-    padding: 0;
 }
-.hero-text{ /*text of hero page*/
-    margin-left: 40px;
+h2{
+    font-size: 50px;
+    margin: 0;
+    font-weight: 300;
+
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    border-radius: 40px; /*makes edges rounded*/
+    text-align: center;
+}
+p{
+    margin: 0;
+    font-weight: 500; /*font weights selected in fonts.google.com (more can be selected later)*/
 }
