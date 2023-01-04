@@ -15,6 +15,13 @@ section {
 }
 .hero-text{ /*text of hero page*/
     margin-left: 80px;
+    margin-bottom: 250px;
+}
+.hero-area{
+    display:flex;
+    flex-direction: column; /*sets how flex itmes are placed in the flex container e.g. column*/
+    height: 100%; /*height is 100% of the parent div section*/
+    justify-content: center;
 }
 footer{
     height: 500px;
@@ -38,19 +45,31 @@ h1{
     margin: 0;
 }
 h2{
-    font-size: 50px;
-    margin: 0;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 300;
 
 }
-.button{
-    width: 200px;
-    height: 60px;
-    background-color: black;
-    border-radius: 40px; /*makes edges rounded*/
-    text-align: center;
-}
 p{
     margin: 0;
+    font-size: 30px;
     font-weight: 500; /*font weights selected in fonts.google.com (more can be selected later)*/
+}
+.button{
+    width: 200px;
+    height: 55px;
+    background-color: black;
+    border-radius: 30px; /*makes edges rounded*/
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.button:hover{ /*:hover is a psuedo-class selector indicates what changes when mouse howevers over item*/
+    background-color: purple;
+}
+.button:active{ /*:active is when you click on a button*/
+    
 }
