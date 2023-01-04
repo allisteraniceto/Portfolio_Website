@@ -19,9 +19,13 @@ section {
 }
 .hero-area{
     display:flex;
-    flex-direction: column; /*sets how flex itmes are placed in the flex container e.g. column*/
+    /*flex-direction: column; /*sets how flex itmes are placed in the flex container e.g. column*/
     height: 100%; /*height is 100% of the parent div section*/
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials{
+    padding-bottom: 200px; 
 }
 footer{
     height: 500px;
@@ -68,8 +72,9 @@ p{
     font-weight: 300;
 }
 .button:hover{ /*:hover is a psuedo-class selector indicates what changes when mouse howevers over item*/
-    background-color: purple;
+    background-color: rgb(107, 165, 107);
 }
 .button:active{ /*:active is when you click on a button*/
-    
+    background-color: #A9A9A9;
+    color: #808080
 }
