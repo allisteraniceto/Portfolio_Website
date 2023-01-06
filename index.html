@@ -14,16 +14,16 @@
             <nav><!--navigation tag-->
                 <img class="logo" src="src/images/wsu_logo.png" alt="WSU Logo"/> <!--**img is self closing: use file path to get image source-->
                 <ul> <!--unordered list tag-->
-                    <li>About me</li> <!--list item tag-->
-                    <li>Projects</li>
-                    <li>Contacts</li>
+                    <li><a href="#about-me">About me</a></li> <!--list item tag-->
+                    <li><a href="#projects">Projects</a></li> <!--anchor tag that links to projects section-->
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Allister Aniceto</h1>
                     <p>CS Student</p>
-                    <div class="button">About Me</div>
+                    <div class="button"><a href="#about-me">About Me</a></div>
                 </div>
                 <div class="socials">
                     <div>
@@ -45,7 +45,7 @@
             </div>
         </section> 
         <!--about us-->
-        <section class="aboutme-section">
+        <section class="aboutme-section" id="about-me"> <!--put id w/o #-->
             <div class="headshot-container">
                 <img class="headshot" src="src/images/spongebob.jpg" alt="Allister Aniceto headshot"/>
             </div>
@@ -57,18 +57,28 @@
             </div>
         </section>
         <!--projects-->
-        <section class="project-section">
+        <section class="project-section" id="projects">
             <h2>Projects</h2>
             <!--PROJECTS HERE-->
             <div class="project-container">
-                <div class="project-card">proj</div>
-                <div class="project-card">proj</div>
-                <div class="project-card">proj</div>
-                <div class="project-card">proj</div>
+                <div class="project-card">
+                    <img src="" alt="Project One Image"/>
+                    <h3>Project One</h3>
+                    <hr/>
+                    <p class="subtext"><a class="project-link"></a></p>
+                </div>
+                <div class="project-card">
+                    <img src="" alt="Project Two Image"/>
+                    <h3>Project Two</h3>
+                </div>
+                <div class="project-card">
+                    <img src="" alt="Project Three Image"/>
+                    <h3>Project Three</h3>
+                </div>
             </div>
         </section>
         <!--footer-->
-        <footer>
+        <footer id="contacts">
 
         </footer>
         <script src="src/app.js"></script>

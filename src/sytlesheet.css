@@ -4,7 +4,6 @@ html, body{ /*removing the default padding google chrome applies*/
     font-family: 'Poppins', sans-serif; /*CSS rules to specify families - copied from fonts.google.com*/
 }
 section {
-
     background-color: darkolivegreen;
 }
 footer{
@@ -45,10 +44,11 @@ p{
     font-weight: 300; /*font weights selected in fonts.google.com (more can be selected later)*/
     text-align: center;
 }
+/*hero section*/
 .hero{
     background-color: #2e3d24;
     height: 100vh; /*viewport-percentage(vh): percentage of area the window in which web content can be seen, so 100 percent of screen (desktop/mobile)*/
-    color: white;
+    color: #fffdd0;
     font-size: 40px;
 }
 .hero-text{ /*text of hero page*/
@@ -91,37 +91,52 @@ p{
     height: 60px;
     margin: 30px;
 }
+/*about me section*/
 .aboutme-section{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-around;
-    background-color:rgb(21, 80, 21)
+    background-color: #3a4c2d;
+    justify-content: center;
+    padding: 80px;
 }
 .headshot{
     width: 300px;
     border-radius: 150px;
     margin: auto;
-    margin-bottom: 20px;
 }
 .headshot-container{
     display: flex;
     align-items: center;
+    padding: 50px;
 }
+.information{
+    color: #fffdd0;
+}
+/*project section*/
 .project-section{
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding: 80px;
-    background-color:rgb(35, 48, 35);
+    background-color: #fffdd0;
+    color: #496139;
+    justify-content: center;
 }
 .project-card{
     width: 300px;
     height: 500px;
-    box-shadow: 5px 5px 20px;
-    background-color: white;
+    box-shadow: 5px 5px 20px grey;
+    background-color: #fffdd0;
+    color: black;
 }
 .project-container{
     display: flex;
     justify-content: space-around;
+    padding: 80px;
+}
+/*anchor links*/
+a{
+    text-decoration: none;
+    color: #fffdd0;
 }
