@@ -44,6 +44,10 @@ p{
     font-weight: 300; /*font weights selected in fonts.google.com (more can be selected later)*/
     text-align: center;
 }
+footer{
+    background-color: #2e3d24;
+    color: #fffdd0;
+}
 /*hero section*/
 .hero{
     background-color: #2e3d24;
@@ -67,6 +71,7 @@ p{
     padding-bottom: 200px; 
 }
 .social-icon{
+    display:flex;
     margin: 15px;
 }
 .button{
@@ -135,6 +140,13 @@ p{
     justify-content: space-around;
     padding: 80px;
 }
+@media only screen and (max-width: 1000px){ /*under 1000px: items will wrap*/
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 /*anchor links*/
 a{
     text-decoration: none;
