@@ -183,3 +183,10 @@ a{
     text-decoration: none;
     color: #fffdd0;
 }
+/*hamburger icon with javascript*/
+.hamburger{
+    border: 0;
+    background-color: transparent;
+    color: #fffdd0;
+    font-size: 30px;
+}
