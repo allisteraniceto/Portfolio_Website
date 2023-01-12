@@ -20,6 +20,9 @@ ul{
     font-size: 30px;
     margin-right: 30px;
 }
+ul.show{ /*a class for toggling the ul when clicking the hamburger icon*/
+    display: block; 
+}
 li{
     text-decoration: none; /*removes underline under a link*/
     list-style-type: none; /*removes bullet points off of list items*/
@@ -185,8 +188,17 @@ a{
 }
 /*hamburger icon with javascript*/
 .hamburger{
-    border: 0;
-    background-color: transparent;
-    color: #fffdd0;
-    font-size: 30px;
+    display: none;
+}
+.hamburger.focus{ /*STOPPED RIGHT HERE*/
+    outline: 0;
+}
+@media only screen and (max-width: 1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: #fffdd0;
+        font-size: 30px;
+    }
 }
