@@ -149,9 +149,13 @@ footer{
 }
 @media only screen and (max-width: 1000px){ /*under 1000px: items will wrap*/
     .project-container{
-        display: flex;
-        /*flex-wrap: wrap;*/
         transform: scale(0.7); /*scaled down to 70% when under 1000px*/
+    }
+}
+@media only screen and (max-width: 400px){ /*for mobile users*/
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 .project-card{
