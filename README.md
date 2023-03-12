@@ -8,4 +8,4 @@ This was a website built to showcase my technical skills in web development
 *CSS
 *Javascript
 
-# Homepage visuals
+## Homepage visuals
