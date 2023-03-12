@@ -5,6 +5,7 @@ html, body{ /*removing the default padding google chrome applies*/
 }
 section {
     background-color: darkolivegreen;
+    min-height: 500px;
 }
 footer{
     height: 500px;
@@ -12,16 +13,18 @@ footer{
 nav{
     display: flex; /*flex to appear inline*/
     justify-content: space-between;
+    height: 100px;
 }
 ul{
     display: flex;
+    list-style-type: none;
     width: 500px;
     justify-content: space-around; /*haves the same space around items in the unordered list*/
     font-size: 30px;
     margin-right: 30px;
 }
-ul.show{ /*a class for toggling the ul when clicking the hamburger icon*/
-    display: block; 
+ul.show{
+    display: block;
 }
 li{
     text-decoration: none; /*removes underline under a link*/
@@ -43,7 +46,7 @@ h2{
 p{
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300; /*font weights selected in fonts.google.com (more can be selected later)*/
     text-align: center;
 }
@@ -58,23 +61,27 @@ footer{
     color: #fffdd0;
     font-size: 40px;
 }
-.hero-text{ /*text of hero page*/
-    margin: auto;
-}
 .hero-area{
-    display:flex;
+    display:flex; /*tells browser div is parent and inside is the flex item*/
     flex-direction: column; /*sets how flex itmes are placed in the flex container e.g. column*/
     height: 100%; /*height is 100% of the parent div section*/
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
+}
+@media only screen and (max-width: 1000px){
+    .hero-area{
+        justify-content: center;
+    }
+}
+.hero-text{ /*text of hero page*/
+    padding: 20px;
 }
 .socials{
     display: flex;
     flex-direction: row;
-    padding-bottom: 200px; 
+    margin-bottom: 50px;
 }
 .social-icon{
-    display:flex;
     margin: 15px;
 }
 .button{
@@ -97,7 +104,7 @@ footer{
 }
 .logo{
     height: 60px;
-    margin: 30px;
+    margin: 20px;
 }
 /*about me section*/
 .aboutme-section{
@@ -109,17 +116,21 @@ footer{
     padding: 80px;
 }
 .headshot{
-    width: 300px;
-    border-radius: 150px;
+    width: 250px;
+    border-radius: 125px;
     margin: auto;
 }
 .headshot-container{
     display: flex;
     align-items: center;
-    padding: 50px;
 }
 .information{
     color: #fffdd0;
+}
+@media only screen and (max-width:1000px){
+    .information{
+        transform: scale(0.7)
+    }
 }
 /*project section*/
 .project-section{
@@ -129,21 +140,26 @@ footer{
     padding: 80px;
     background-color: #fffdd0;
     color: #496139;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .project-container{
     display: flex;
     justify-content: space-around;
-    padding: 80px;
     text-align: center;
 }
 @media only screen and (max-width: 1000px){ /*under 1000px: items will wrap*/
+    .project-container{
+        transform: scale(0.7); /*scaled down to 70% when under 1000px*/
+    }
+}
+@media only screen and (max-width: 400px){ /*for mobile users*/
     .project-container{
         display: flex;
         flex-wrap: wrap;
     }
 }
 .project-card{
+    min-width: 300px;
     width: 300px;
     height: 600px;
     box-shadow: 5px 5px 20px grey;
@@ -171,6 +187,9 @@ footer{
 }
 .project-title{
     margin-top: 30px;
+}
+.project-link{
+    color: #000000;
 }
 .subtext{
     font-size: 15px;
@@ -200,5 +219,22 @@ a{
         background-color: transparent;
         color: #fffdd0;
         font-size: 30px;
+        align-self: flex-end;
+        margin: 20px;
+    }
+    ul{
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+    ul.show{ /*a class for toggling the ul when clicking the hamburger icon*/
+        display: block; 
+    }
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .logo{
+        display: none;
     }
 }
