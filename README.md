@@ -9,3 +9,6 @@ This was a website built to showcase my technical skills in web development
 *Javascript
 
 ## Homepage visuals
+![page 1](portfolio-website-page1)
+![page 1](portfolio-website-page2)
+![page 1](portfolio-website-page3)
