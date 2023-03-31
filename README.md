@@ -1,3 +1,15 @@
 # Allister Aniceto's Portfolio Website
 
-### I am a junior studying computer science at WSU Tri-Cities. I looking to step foot in front-end and back-end development.
+This was a website built to showcase my technical skills in web development
+
+## Technologies used:
+
+* HTML5
+* CSS
+* Javascript
+
+## Homepage visuals
+![page 1](portfolio-website-page1.png)
+![page 1](portfolio-website-page2.png)
+![page 1](portfolio-website-page3.png)
+![page 1](portfolio-website-footer.png)
