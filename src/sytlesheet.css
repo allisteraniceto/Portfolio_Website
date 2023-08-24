@@ -116,8 +116,11 @@ footer{
     padding: 80px;
 }
 .headshot{
-    width: 250px;
-    border-radius: 125px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    /*object-position: 100%;*/
+    border-radius: 200px;
     margin: auto;
 }
 .headshot-container{
