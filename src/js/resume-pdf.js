@@ -1,4 +1,4 @@
-const url = '../docs/allister-aniceto_resume.pdf'; //path to resume pdf
+const url = 'src/docs/allister-aniceto_resume.pdf'; //path to resume pdf
 
 let pdfDoc = null, //set to null by default 
     pageNum = 1, //start on the first page
@@ -23,7 +23,7 @@ const renderPage = num => { //practice arrow functions
         const renderCtx = {
             canvasContext: ctx,
             viewport
-        }
+        };
 
         page.render(renderCtx).promise.then( () => {
             pageIsRendering = false;
