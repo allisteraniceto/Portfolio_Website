@@ -54,6 +54,7 @@ footer{
     background-color: #2e3d24;
     color: #fffdd0;
 }
+
 /*hero section*/
 .hero{
     background-color: #2e3d24;
@@ -106,6 +107,7 @@ footer{
     height: 60px;
     margin: 20px;
 }
+
 /*about me section*/
 .aboutme-section{
     display: flex;
@@ -135,6 +137,7 @@ footer{
         transform: scale(0.7)
     }
 }
+
 /*project section*/
 .project-section{
     display: flex;
@@ -199,6 +202,7 @@ footer{
     color: #000000;
     margin: 25px;
 }
+
 /*resume section*/
 .resume-section{
     display: flex;
@@ -213,11 +217,13 @@ hr{
     margin-left: 30px;
     margin-right: 30px;
 }
+
 /*anchor links*/
 a{
     text-decoration: none;
     color: #fffdd0;
 }
+
 /*hamburger icon with javascript*/
 .hamburger{
     display: none;
