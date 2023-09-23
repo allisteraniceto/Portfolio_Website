@@ -15,9 +15,9 @@
             <nav><!--navigation tag-->
                 <img class="logo" src="src/images/wsu_logo.png" alt="WSU Logo"/> <!--**img is self closing: use file path to get image source-->
                 <ul id="nav-list"> <!--unordered list tag-->
-                    <li><a href="#about-me">About me</a></li> <!--list item tag-->
+                    <li><a href="#about-me">About Me</a></li> <!--list item tag-->
                     <li><a href="#projects">Projects</a></li> <!--anchor tag that links to projects section-->
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i> <!--icon fron fontawesome.com-->
@@ -92,14 +92,23 @@
         </section>
         <section class="resume-section" id="resume">
             <h2>Resume</h2>
-            <div>
+            <div class="canvas-container">
                 <canvas id="pdf-render"></canvas> <!--lets us draw pdf on canvas-->
             </div>
         </section>
         <!--footer-->
-        <footer id="contacts">
+        <footer id="contact">
             <h2>Contact Me</h2>
             <p>allisteraniceto@gmail.com</p>
+            <div class="form-container">
+                <form>
+                    <h3>Get in touch</h3>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="name" placeholder="Email ID" required>
+                    <textarea type="message" id="message" rows="4" placeholder="Ask anything :)" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </footer>
         <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
         <script src="src/js/resume-pdf.js"></script>
