@@ -7,9 +7,6 @@ section {
     background-color: darkolivegreen;
     min-height: 500px;
 }
-footer{
-    height: 500px;
-}
 nav{
     display: flex; /*flex to appear inline*/
     justify-content: space-between;
@@ -50,10 +47,8 @@ p{
     font-weight: 300; /*font weights selected in fonts.google.com (more can be selected later)*/
     text-align: center;
 }
-footer{
-    background-color: #2e3d24;
-    color: #fffdd0;
-}
+
+
 /*hero section*/
 .hero{
     background-color: #2e3d24;
@@ -106,6 +101,7 @@ footer{
     height: 60px;
     margin: 20px;
 }
+
 /*about me section*/
 .aboutme-section{
     display: flex;
@@ -135,6 +131,7 @@ footer{
         transform: scale(0.7)
     }
 }
+
 /*project section*/
 .project-section{
     display: flex;
@@ -199,32 +196,85 @@ footer{
     color: #000000;
     margin: 25px;
 }
+
 /*resume section*/
 .resume-section{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /*height: 100vh;*/
     padding: 80px;
-    background-color: #fffdd0;
+    background-color: #ECEBC9;
     color: #496139;
     justify-content: space-evenly;
 }
+<<<<<<< HEAD
 #pdf-render{
     width: 85%;
     height: 975px;
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+.canvas-container{
+    display: flex; /*use flexbox for centering*/
+    justify-content: center; /*center horizontally*/
+    align-items: center; /*center horizontally*/
+>>>>>>> 99f31faf40717037bd7fc5f378d7c2bde79c1373
 }
 hr{
     margin-left: 30px;
     margin-right: 30px;
 }
+
+/*FOOTER SECTION*/
+footer{
+    height: 600px;
+    background-color: #2e3d24;
+    color: #fffdd0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    padding: 2vw 4vw; /*2% of viewport top and bottom padding, 4% of viewport left and right */
+    border-radius: 50px;
+    background-color: #fffdd0;
+}
+form h3{
+    color: #2e3d24;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 1;
+    border-radius: 5px;
+    border-color: #2e3d24;
+    outline: none;
+    margin: 10px 0; /*10px top and bottom, 0 left and right*/
+    padding: 5px;
+}
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+    background-color: #fffdd0;
+}
+::-webkit-scrollbar-thumb {
+    background-color: darkolivegreen; /* Change to your desired color */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
 /*anchor links*/
 a{
     text-decoration: none;
     color: #fffdd0;
 }
+
 /*hamburger icon with javascript*/
 .hamburger{
     display: none;
