@@ -209,6 +209,13 @@ footer{
     color: #496139;
     justify-content: space-evenly;
 }
+#pdf-render{
+    width: 85%;
+    height: 975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 hr{
     margin-left: 30px;
     margin-right: 30px;
