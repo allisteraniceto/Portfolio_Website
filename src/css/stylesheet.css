@@ -207,19 +207,13 @@ p{
     color: #496139;
     justify-content: space-evenly;
 }
-<<<<<<< HEAD
 #pdf-render{
     width: 85%;
     height: 975px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-=======
-.canvas-container{
     display: flex; /*use flexbox for centering*/
-    justify-content: center; /*center horizontally*/
+    flex-direction: column;
+    justify-content: center;
     align-items: center; /*center horizontally*/
->>>>>>> 99f31faf40717037bd7fc5f378d7c2bde79c1373
 }
 hr{
     margin-left: 30px;
