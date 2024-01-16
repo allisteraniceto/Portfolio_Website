@@ -64,20 +64,10 @@ p {
   justify-content: space-evenly;
   align-items: center;
 }
-@media only screen and (max-width: 1000px) {
-  .hero-area {
-    justify-content: center;
-  }
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-}
 .hero-text {
   /*text of hero page*/
   padding: 20px;
+  padding-top: 50px;
 }
 .socials {
   display: flex;
@@ -92,8 +82,9 @@ p {
   height: 55px;
   background-color: #171e12;
   border-radius: 30px; /*makes edges rounded*/
-  text-align: center;
-  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   font-size: 30px;
   font-weight: 300;
@@ -110,6 +101,29 @@ p {
 .logo {
   height: 60px;
   margin: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .hero-area {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-text {
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
 }
 
 /*about me section*/
