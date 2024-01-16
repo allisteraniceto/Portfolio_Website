@@ -261,12 +261,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 form {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  max-width: 600px;
-  padding: 2vw 4vw; /*2% of viewport top and bottom padding, 4% of viewport left and right */
+  width: 400px;
+  padding: 3vw 3vw; /*2% of viewport top and bottom padding, 4% of viewport left and right */
   border-radius: 50px;
   background-color: #fffdd0;
 }
@@ -274,9 +278,12 @@ form h3 {
   color: #2e3d24;
   font-weight: 800;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 form input,
-form textarea {
+textarea,
+button {
   border: 1;
   border-radius: 5px;
   border-color: #2e3d24;
