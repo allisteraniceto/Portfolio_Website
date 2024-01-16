@@ -221,23 +221,16 @@ p {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 80px;
   background-color: #ecebc9;
   color: #496139;
-  justify-content: space-evenly;
+}
+.resume-section h2 {
+  margin-top: 75px;
 }
 .resume-pdf {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#pdf-render {
-  width: 85%;
-  height: 975px;
-  display: flex; /*use flexbox for centering*/
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /*center horizontally*/
 }
 hr {
   margin-left: 30px;
@@ -248,6 +241,12 @@ hr {
   .resume-section {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .resume-section h2 {
+    padding-bottom: 20px;
+  }
+  iframe {
+    height: 600px;
   }
 }
 
