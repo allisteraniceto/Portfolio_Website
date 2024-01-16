@@ -170,7 +170,7 @@ p {
     height: auto;
   }
   .project-container {
-    transform: scale(0.7); /*scaled down to 70% when under 1000px*/
+    /* transform: scale(0.7); scaled down to 70% when under 1000px */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,9 +269,9 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 350px;
   padding: 3vw 3vw; /*2% of viewport top and bottom padding, 4% of viewport left and right */
-  border-radius: 50px;
+  border-radius: 15px;
   background-color: #fffdd0;
 }
 form h3 {
@@ -285,7 +285,7 @@ form input,
 textarea,
 button {
   border: 1;
-  border-radius: 5px;
+  border-radius: 15px;
   border-color: #2e3d24;
   outline: none;
   margin: 10px 0; /*10px top and bottom, 0 left and right*/
