@@ -232,6 +232,7 @@ p {
 
 /*resume section*/
 .resume-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -245,6 +246,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 hr {
   margin-left: 30px;
