@@ -314,6 +314,8 @@ form button {
   border-radius: 5px;
   background-color: #2e3d24;
   color: #ffffff;
+  height: 25px;
+  margin-top: 5px;
 }
 
 /*SCROLL BAR*/
