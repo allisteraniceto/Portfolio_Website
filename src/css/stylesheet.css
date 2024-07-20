@@ -257,8 +257,8 @@ hr {
 
 @media only screen and (max-width: 1000px) {
   .resume-section {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 1rem;
+    height: auto;
   }
   .resume-section h2 {
     padding-bottom: 20px;
@@ -288,15 +288,16 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  padding: 30px;
+  width: 25rem;
+  height: 17rem;
+  padding: 1.5rem;
   border-radius: 15px;
   background-color: #fffdd0;
 }
 form h3 {
   color: #2e3d24;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin: 0 0 1rem 0;
   display: flex;
   justify-content: center;
 }
@@ -305,17 +306,42 @@ textarea {
   border-width: 2px;
   border-radius: 10px;
   border-color: #2e3d24;
-  outline: none;
   margin: 10px 0; /*10px top and bottom, 0 left and right*/
+  outline: none;
   padding: 5px;
 }
 
-form button {
+textarea::placeholder {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #888;
+}
+
+form textarea.custom {
+  height: 13rem;
+  resize: none;
+}
+
+form .button-form-container {
+  margin-top: 5px;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+}
+
+form .button-form-container button {
   border-radius: 5px;
   background-color: #2e3d24;
   color: #ffffff;
-  height: 25px;
-  margin-top: 5px;
+  height: 1.75rem;
+  width: 7.5rem;
+}
+
+/*for phones*/
+@media only screen and (max-width: 500px) {
+  form {
+    width: 17.5rem;
+  }
 }
 
 /*SCROLL BAR*/
